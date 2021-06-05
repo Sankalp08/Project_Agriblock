@@ -14,8 +14,9 @@ h1{
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
-    color: #d8f8b7;
+    color: #c7ffd8;
 }
+
 h2{
     font-family: 'Crete Round', serif;
     font-size: 1.5rem;
@@ -70,6 +71,14 @@ ul{
 .navbar-brand:hover{
     color: #d8f8b7;
 }
+.navbar-toggler {
+    color:  rgb(251,235,3);
+    border:none;
+}
+.fa-bars{
+    color: #289672;
+    font-size:16px;
+}
 .project-name{
     text-align: center;
     position: relative;
@@ -96,6 +105,8 @@ ul{
     position: relative;
     /* z-index: 1; */
     height: 200px;
+    /* -webkit-box-align: ; */
+    box-shadow: 0 10px 40px -10px rgba(251,235,3,1);
 }
 .card-body{
     background-color: #fcecdd;
@@ -109,8 +120,8 @@ ul{
     color: #289672;
 }
 .grey-card{
-    background: rgb(114,107,227);
-    background: radial-gradient(circle, rgba(114,107,227,1) 0%, rgba(31,232,1,1) 76%, rgba(86,93,85,1) 100%);
+    background: rgb(131,58,180);
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     position: absolute;
     height: 160px;
     width: 100%;
@@ -134,7 +145,6 @@ ul{
 }
 .product-image{
     height: 160px;
-    /* position: absolute; */
     border-radius: 6%;
     z-index: 3;
     /* top: -30px; */
@@ -144,6 +154,15 @@ ul{
     width: 300px;
 } */
 
+/* Section Footer */
+.fab {
+    padding: 0 10px;
+}
+.fas {
+    padding: 0 10px;
+}
+
+
 
 /************************************   ID-selectors *******************************/
 #title{
@@ -152,13 +171,41 @@ ul{
     /* padding: 30px; */
 }
 #content{
+    padding: 3% 7%;
     background-color: #fcecdd;
     padding-top: 20px;
     text-align: center;
 }
 #product{
+    padding: 3% 7%;
     margin: 0%;
     text-align: center;
     background: rgba(254,168,47,1);
-    background: radial-gradient(circle, rgba(251,235,3,1) 0%, rgba(254,168,47,1) 100%);
+    /* background: radial-gradient(circle, rgba(251,235,3,1) 0%, rgba(254,168,47,1) 100%); */
 }
+#footer {
+    background-color: #fcecdd;
+    text-align: center;
+    padding: 4% 8%;
+}
+
+/* Media Query Section */
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    #product {
+        text-align: center;
+    }
+    .title-caption {
+        font-size: 1.5rem;
+    }
+  
+  }
